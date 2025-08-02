@@ -105,3 +105,34 @@ for(let i=str.length;i>0;i--){
     console.log(count);
 
 
+// ✅ Q.Count the each string word "javascript".
+
+let str="javascript";
+let count={};
+for(let i=0;i<str.length;i++){
+  let char=str[i];
+  if(count[char]){
+    count[char]++;
+  }else {
+    count[char] = 1;
+  }
+}
+console.log(count);
+
+// ✅ Q.print a srting in same order.
+
+let str="hello world";
+let nstr=str.split(" ");
+let newv=[];
+for(let i=0;i<nstr.length;i++){
+    
+     let word=nstr[i];
+
+     let newvr="";
+     for(let j=word.length-1;j>=0;j--){
+        newvr+=word[j];
+     }
+    newv.push(newvr);
+}
+let reverse=newv.join(" ");
+console.log(reverse );
