@@ -18,7 +18,7 @@ for(let i=1;i<=6;i++){
 }
 
 
-✅ Q.Multiplication Table Generator.
+// ✅ Q.Multiplication Table Generator.
     
 let num=prompt("enter a num ");
 for(let i=1;i<=10;i++){
@@ -26,7 +26,7 @@ for(let i=1;i<=10;i++){
 }
 
 
-✅ Q.Countdown Timer.
+// ✅ Q.Countdown Timer.
 
 let num=prompt("enter a num");
 for(let i=num;i>=1;i--){
@@ -35,7 +35,7 @@ for(let i=num;i>=1;i--){
 console.log("times up");
 
 
-✅ Q.Simple calculator
+// ✅ Q.Simple calculator
 let firstvlaue=prompt("enter a  first value");
 let operator=prompt("enter a operator +,-,*,/");
 let secondvalue=prompt("enter a second value ");
@@ -58,7 +58,7 @@ else{
 console.log(result);
 
 
- ✅ Q.Repeted projects Entry.
+//  ✅ Q.Repeted projects Entry.
 
 while(true){
     let user=prompt("enter a produts name");

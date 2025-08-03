@@ -136,3 +136,4 @@ for(let i=0;i<nstr.length;i++){
 }
 let reverse=newv.join(" ");
 console.log(reverse );
+
