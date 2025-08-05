@@ -198,3 +198,21 @@ console.log(num);
 }
 
 
+ ✅ Q5.Pyramid Patren Print.
+
+for(let i=1;i<=5;i++){
+    num="";
+    for(let j=1;j<=5-i;j++){
+        num=num+" ";
+    }
+    
+    for(let l=1;l<=i;l++){
+        num=num+"*";
+    }
+ for(let k=2;k<=i;k++){
+        num=num+"*";
+    }
+
+
+    console.log(num);
+}
