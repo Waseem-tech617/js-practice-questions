@@ -141,7 +141,7 @@ let reverse=newv.join(" ");
 console.log(reverse );
 
 
-                         // nested loop ractice questions.
+                         // nested loop Practice questions.
 
 //  ✅ Q1.Increasing Number Patren.
 
@@ -198,7 +198,7 @@ console.log(num);
 }
 
 
- ✅ Q5.Pyramid Patren Print.
+//  ✅ Q5. Pyramid Patren Print.
 
 for(let i=1;i<=5;i++){
     num="";
@@ -215,4 +215,40 @@ for(let i=1;i<=5;i++){
 
 
     console.log(num);
+}
+
+
+
+// //  ✅ Q5. Inverted Pyramid Patren Print.
+
+for(let i=5;i>=1;i--){
+    num="";
+    for(let j=1;j<=5-i;j++){
+        num=num+" ";
+    }
+    
+    for(let l=1;l<=i;l++){
+        num=num+"*";
+    }
+ for(let k=2;k<=i;k++){
+        num=num+"*";
+    }
+
+
+    console.log(num);
+}
+
+
+// ✅ Q6. X shape Patren Print.
+
+for (let i = 1; i <= 7; i++) {
+    let line = "";
+    for (let j = 1; j <= 7; j++) {
+        if (i === j || i + j === 8) {
+            line += "*";
+        } else {
+            line += " ";
+        }
+    }
+    console.log(line);
 }
