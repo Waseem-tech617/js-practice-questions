@@ -320,3 +320,106 @@ for(let i=1;i<=4;i++){
    
     console.log(row);
 }
+
+
+✅ Q8. Hollow Hourglass Number Pattern
+
+for(let i=1;i<=5;i++){
+    row="";
+    for(let j=2;j<=i;j++){
+        row+=" ";
+    }
+    for(let l=1;l<=2*(6-i)-1;l++){
+        if(l===1){
+            row+=1;
+        }else if(l===2*(6-i)-1){
+            row+=(6-i);
+        }else{
+            row+=" ";
+        }
+    }
+    console.log(row);
+}
+
+for(let i=1;i<=4;i++){
+    row="";
+    for(let j=3;j>=i;j--){
+        row+=" ";
+    }
+    for(let l=1;l<=i*2+1;l++){
+        if(l===1 ){
+            row+=1;
+        }
+        else if(l===2*i+1){
+            row+=(i+1);
+        }
+        else{
+            row+=" ";
+        }
+    }
+    console.log(row);
+}
+
+
+
+✅ Q9. Symmetric Number Pyramid with Spaced Center Digits.
+
+
+let n=5;
+for(let i=1;i<=n;i++){
+    row="";
+    
+    for(let j=1;j<=2*(n-i);j++){
+        row+=" ";
+    }
+
+    
+    row+=1;
+ if(i===1){
+         for(let s=1;s<=7;s++){
+        row+=" ";
+    }
+    row+=1;
+ }
+   if(i===2){
+    row+="   "+i+"   "+i+"   "+1;
+   }else if(i>2){
+    for(let k=1;k<=2*i+1;k++){
+        row+=" ";
+    }
+    row+=i;
+   }
+   if(i>2){
+   for(let l=1;l<=2*i+1;l++){
+        row+=" ";
+    }
+    row+=1;
+}
+    
+   console.log(row)
+
+    }
+
+
+✅ Q9. Pyramid Number Pattern .
+let n=prompt("enter a num");
+
+for(let i=1;i<=n;i++){
+    row="";
+    for(let j=1;j<=i;j++){
+   row+=j;
+    }
+    for(let k=1;k<=2*(n-i)-1;k++){
+        row+=" ";
+    }
+     for(let l=i;l>=1;l--){
+   if(l===n){
+    l-1;
+   }else{
+        row+=l;}
+
+
+ 
+    }
+    console.log(row);
+}
