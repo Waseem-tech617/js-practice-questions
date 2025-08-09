@@ -322,7 +322,7 @@ for(let i=1;i<=4;i++){
 }
 
 
-✅ Q8. Hollow Hourglass Number Pattern
+// ✅ Q8. Hollow Hourglass Number Pattern
 
 for(let i=1;i<=5;i++){
     row="";
@@ -362,7 +362,7 @@ for(let i=1;i<=4;i++){
 
 
 
-✅ Q9. Symmetric Number Pyramid with Spaced Center Digits.
+// ✅ Q9. Symmetric Number Pyramid with Spaced Center Digits.
 
 
 let n=5;
@@ -400,8 +400,8 @@ for(let i=1;i<=n;i++){
 
     }
 
-
-✅ Q9. Pyramid Number Pattern .
+// ✅ Q10.Holow diamond patren.
+  
 let n=prompt("enter a num");
 
 for(let i=1;i<=n;i++){
