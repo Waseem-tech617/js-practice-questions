@@ -1,3 +1,5 @@
+// 1️⃣ Reverse Vowels in a string "javascript".
+
 let str="javascript";
 let rev="";
 for(let i=0;i<=str.length-1;i++){
