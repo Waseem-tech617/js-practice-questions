@@ -64,11 +64,27 @@ let special=false;
     }else{
         console.log("weakpassword");
     }
+
+
+
+// Q5. Checking Username.
+
+let special=false;
+let user=prompt("Enter a Name ,only enter alphabets and numbers not allowed special characters or minimum length 5");
+if(user.length>=5){
+for(let i=0;i<=user.length-1;i++){
+    if("!@#$%^&*".includes(user[i])){
+       special=true;
+    }
+}}else{
+    console.log("enter minuimum 5 characters");
     
-    
-    
-    
- 
-    
-    
-   
+}
+
+if(user.length>=5){
+if(special){
+    console.log("invalid name");
+
+}else{
+    console.log("valid name");
+}}
