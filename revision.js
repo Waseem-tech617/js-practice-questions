@@ -20,3 +20,18 @@ for(let i=0, index=0;i<=str.length-1;i++){
 }
 console.log(nstr);
 
+
+// 2️⃣ Count Words That Start and End with Same Letter.
+
+let sentence="Anna and Bob are amazing";
+let words=sentence.split(" ");
+let count=0;
+for(let i=0;i<=words.length-1;i++){
+    let word=words[i];
+    let first=word[0].toLowerCase();
+    let second=word[word.length-1].toLowerCase();
+    if(first===second){
+        count++;
+    }
+}
+console.log(count);
