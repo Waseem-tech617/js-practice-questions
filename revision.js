@@ -129,3 +129,21 @@ for(let i=0;i<=str.length-1;i++){
     }
 }
 console.log(nstr);
+
+
+Q8.count vovuls.
+
+let strn="wAAAAAAAAsemhdirhcm";
+let str=strn.toLowerCase();
+let count=0;
+for(let i=0;i<=str.length;i++){
+ if(str[i]==="a" || str[i]==="e"|| str[i]==="i" ||str[i]==="o" ||str[i]==="u"){
+    count++;
+ }}
+ if(count>5){
+    console.log("Many vovles");
+ }
+ else{
+    console.log("few vovels");
+ }
+ 
