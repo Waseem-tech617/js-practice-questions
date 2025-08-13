@@ -88,3 +88,29 @@ if(special){
 }else{
     console.log("valid name");
 }}
+
+
+
+Q6.count nsum of numbers in String.
+
+let str="wdasg2365 gs";
+sum=0;
+for(let i=0;i<=str.length-1;i++){
+    if(!isNaN(str[i])){
+     
+    sum=sum+Number(str[i]);
+    }
+}console.log(sum);
+
+// Q7.reverse string words remain in same order .
+
+let str="hello world";
+let strn=str.split(" ");
+let Reverses="";
+
+
+for(let i=0;i<=strn.length-1;i++){
+   let  Reverse=strn[i].split("").reverse().join("");
+Reverses+=Reverse +" ";
+}
+    console.log(Reverses);
