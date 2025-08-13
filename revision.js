@@ -114,3 +114,18 @@ for(let i=0;i<=strn.length-1;i++){
 Reverses+=Reverse +" ";
 }
     console.log(Reverses);
+
+
+
+// Q7.remove repition or Characters.
+
+
+let str="banabana";
+let nstr="";
+
+for(let i=0;i<=str.length-1;i++){
+    if(!nstr.includes(str[i])) {
+        nstr+=str[i];
+    }
+}
+console.log(nstr);
