@@ -131,7 +131,7 @@ for(let i=0;i<=str.length-1;i++){
 console.log(nstr);
 
 
-Q8.count vovuls.
+// Q8.count vovuls.
 
 let strn="wAAAAAAAAsemhdirhcm";
 let str=strn.toLowerCase();
@@ -147,3 +147,14 @@ for(let i=0;i<=str.length;i++){
     console.log("few vovels");
  }
  
+
+// Q9.convert string reverse.
+
+let str= "I love JavaScript";
+let nstr=str.split(" ");
+let reverse="";
+for(let i=nstr.length-1;i>=0;i--){
+
+reverse+=nstr[i]+" ";
+}
+console.log(reverse);
