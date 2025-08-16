@@ -172,3 +172,19 @@ for(let i=0;i<=str.length-1;i++){
     }
 }
 console.log(rem);
+
+
+
+// Q11.print diamond partren.
+ 
+for(let i=1;i<=5;i++){
+    let row="";
+    for(let j=1;j<=5-i;j++){
+        row+=" ";
+    }
+    for(let k=1;k<=2*i-1;k++){
+        row+="*";
+    }
+    
+    console.log(row);
+}
