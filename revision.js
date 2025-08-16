@@ -158,3 +158,17 @@ for(let i=nstr.length-1;i>=0;i--){
 reverse+=nstr[i]+" ";
 }
 console.log(reverse);
+
+
+// Q10.remove numbers and special symbol from string "JavaScript123!".
+
+let str = "JavaScript123!";
+let rem="";
+for(let i=0;i<=str.length-1;i++){
+    if(!isNaN(str[i]) || "!@#$%^&*".includes(str[i])){
+        continue;
+    }else{
+        rem+=str[i];
+    }
+}
+console.log(rem);
