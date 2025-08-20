@@ -25,3 +25,12 @@ console.log(ten(200));
     return a+b;
  }
 console.log(add(12,24));
+
+
+// // Q4.Create a function of square of  number.
+
+ function add(a){
+    return a*a;
+ }
+console.log(add(5));
+
