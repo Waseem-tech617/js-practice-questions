@@ -18,3 +18,10 @@ let ten=Discountcalculator(10);
 console.log(ten(1200));
 console.log(ten(200));
 
+
+// Q3.Create a function of Adding tow numbers.
+
+ function add(a,b){
+    return a+b;
+ }
+console.log(add(12,24));
