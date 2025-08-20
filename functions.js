@@ -46,3 +46,14 @@ let checking=(num)=>{
 
 }
 checking(10);
+
+
+// Q6.Create a function convert string into upercase.
+function upercase(str){
+let upper=str.toUpperCase();
+console.log(upper);
+
+
+
+}
+upercase("waseem");
