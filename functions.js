@@ -96,3 +96,14 @@ function prime(num){
    
   }
 console.log(prime(10));
+
+
+
+// Q10.Create a function to check a greater num.
+
+function largernumber(num1,num2){
+    if(num1>num2) return "num1 is greater ";
+    else          return "num2 is greater ";
+    
+}
+console.log(largernumber(144,23));
