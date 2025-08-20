@@ -107,3 +107,12 @@ function largernumber(num1,num2){
     
 }
 console.log(largernumber(144,23));
+
+
+// Q11.Create a function and print a table.
+function table(num){
+  for(let i=1;i<=10;i++){
+   console.log(`${num} X ${i} = ${num*i}`);
+  }
+}
+table(5);
