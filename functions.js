@@ -49,8 +49,22 @@ checking(10);
 
 
 // Q6.Create a function convert string into uppercase.
+
 function upercase(str){
 let upper=str.toUpperCase();
 console.log(upper);
 }
 upercase("waseem");
+
+
+// Q7.Create a function of string and reverse it.
+
+
+function reverse(str){
+  let nstr=str.split("").reverse().join("");
+console.log(nstr);
+
+
+
+}
+reverse("waseem");
