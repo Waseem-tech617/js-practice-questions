@@ -34,3 +34,15 @@ console.log(add(12,24));
  }
 console.log(add(5));
 
+
+// Q5.Create a function of checking the number odd or event.
+
+let checking=(num)=>{
+ if(num%2===0){ 
+    console.log(`${num} is even`);
+}else{
+    console.log(`${num} is odd`);
+}
+
+}
+checking(10);
