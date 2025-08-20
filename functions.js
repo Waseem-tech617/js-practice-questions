@@ -79,7 +79,20 @@ if(nstr===str){
 }else{
   console.log(`${str} is not plaindrome`)
 }
-
-
 }
 plaindrome("civic");
+
+
+
+// Q9.Create a function to  check num prime or Not.
+
+function prime(num){
+  for(let i=2;i<num;i++)
+  if(num%i==0){
+    return "num is  not prime";
+  }else{
+    return "num is prime";
+  }
+   
+  }
+console.log(prime(10));
