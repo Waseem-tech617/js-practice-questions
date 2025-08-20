@@ -68,3 +68,18 @@ console.log(nstr);
 
 }
 reverse("waseem");
+
+
+// Q8.Create a function it checks string plaindrome.
+
+let plaindrome=function(str){
+let nstr=str.split("").reverse().join("");
+if(nstr===str){
+  console.log(`${str} is pliandrome`);
+}else{
+  console.log(`${str} is not plaindrome`)
+}
+
+
+}
+plaindrome("civic");
