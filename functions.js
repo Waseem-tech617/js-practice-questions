@@ -110,9 +110,23 @@ console.log(largernumber(144,23));
 
 
 // Q11.Create a function and print a table.
+
 function table(num){
   for(let i=1;i<=10;i++){
    console.log(`${num} X ${i} = ${num*i}`);
   }
 }
 table(5);
+
+
+// Q12.Create a function to claculate a factor of Number.
+
+function factor(num){
+    for(let i=1;i<=num;i++){
+        if(num%i===0){
+            console.log(i);
+            
+        }
+    }
+}
+factor(15);
