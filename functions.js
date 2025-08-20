@@ -119,14 +119,23 @@ function table(num){
 table(5);
 
 
-// Q12.Create a function to claculate a factor of Number.
+// // Q12.Create a function to claculate a perfact  Number.
 
 function factor(num){
-    for(let i=1;i<=num;i++){
+    let sum=0;
+    for(let i=1;i<num;i++){
         if(num%i===0){
-            console.log(i);
-            
+            sum+=i;
+        
+        }}
+            if(sum===num){
+                console.log("perpect num");
+
+            }else{
+                console.log("not perfect num");
+            }
+        
         }
-    }
-}
-factor(15);
+factor(11);
+factor(25);
+factor(6);
