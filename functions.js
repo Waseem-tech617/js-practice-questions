@@ -218,3 +218,20 @@ function printstring(fn,value){
     console.log(fn(value));
 }
 printstring(uppercase,"sdsfs");
+
+
+
+// Q20.Create a first class function.
+
+function execute(fn){
+    fn();
+}
+function massage(){
+    console.log("waseem");
+}
+
+function greet(){
+    console.log("hello user ");
+}
+execute(massage);
+execute(greet);
