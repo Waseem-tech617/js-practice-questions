@@ -182,3 +182,10 @@ console.log(averag);
 }
 average(1,2,3,4,5,6,7);
 average(25,32,43,65,765);
+
+
+
+// Q16.create a IFFI function.
+(function abcd(){
+    console.log("hi!");
+})();
