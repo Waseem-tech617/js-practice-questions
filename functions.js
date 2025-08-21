@@ -184,8 +184,18 @@ average(1,2,3,4,5,6,7);
 average(25,32,43,65,765);
 
 
-
 // Q16.create a IFFI function.
+
 (function abcd(){
     console.log("hi!");
 })();
+
+
+
+// // Q17.create a IFFI function and multiply tow numbers.
+
+
+(function abcd(a,b){
+    console.log(a*b);
+})(1,3);
+
