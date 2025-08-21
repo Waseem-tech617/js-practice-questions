@@ -209,3 +209,12 @@ let dobel=function(num){
 console.log(dobel(88));
 
 
+// Q19.Create a function convert string into uppercase.
+
+function uppercase(str){
+ return str.toUpperCase();
+}
+function printstring(fn,value){
+    console.log(fn(value));
+}
+printstring(uppercase,"sdsfs");
