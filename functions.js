@@ -1,141 +1,170 @@
-// Q1.Bmi Calculator.
+// // Q1.Bmi Calculator.
 
-function bmi(weight,height){
-    return weight/(height*height);
-}
-console.log(bmi(35,1.5).toFixed(1));
-
-
-// Q2.Discount Calculator.
-
-function Discountcalculator(discount){
-    return function(value){
-        return value-value*(discount/100);
-    }
-
-}
-let ten=Discountcalculator(10);
-console.log(ten(1200));
-console.log(ten(200));
+// function bmi(weight,height){
+//     return weight/(height*height);
+// }
+// console.log(bmi(35,1.5).toFixed(1));
 
 
-// Q3.Create a function of Adding tow numbers.
+// // Q2.Discount Calculator.
 
- function add(a,b){
-    return a+b;
- }
-console.log(add(12,24));
+// function Discountcalculator(discount){
+//     return function(value){
+//         return value-value*(discount/100);
+//     }
 
-
-// // Q4.Create a function of square of  number.
-
- function add(a){
-    return a*a;
- }
-console.log(add(5));
+// }
+// let ten=Discountcalculator(10);
+// console.log(ten(1200));
+// console.log(ten(200));
 
 
-// Q5.Create a function of checking the number odd or event.
+// // Q3.Create a function of Adding tow numbers.
 
-let checking=(num)=>{
- if(num%2===0){ 
-    console.log(`${num} is even`);
-}else{
-    console.log(`${num} is odd`);
-}
-
-}
-checking(10);
+//  function add(a,b){
+//     return a+b;
+//  }
+// console.log(add(12,24));
 
 
-// Q6.Create a function convert string into uppercase.
+// // // Q4.Create a function of square of  number.
 
-function upercase(str){
-let upper=str.toUpperCase();
-console.log(upper);
-}
-upercase("waseem");
-
-
-// Q7.Create a function of string and reverse it.
+//  function add(a){
+//     return a*a;
+//  }
+// console.log(add(5));
 
 
-function reverse(str){
-  let nstr=str.split("").reverse().join("");
-console.log(nstr);
+// // Q5.Create a function of checking the number odd or event.
+
+// let checking=(num)=>{
+//  if(num%2===0){ 
+//     console.log(`${num} is even`);
+// }else{
+//     console.log(`${num} is odd`);
+// }
+
+// }
+// checking(10);
 
 
+// // Q6.Create a function convert string into uppercase.
 
-}
-reverse("waseem");
+// function upercase(str){
+// let upper=str.toUpperCase();
+// console.log(upper);
+// }
+// upercase("waseem");
 
 
-// Q8.Create a function it checks string plaindrome.
+// // Q7.Create a function of string and reverse it.
 
-let plaindrome=function(str){
-let nstr=str.split("").reverse().join("");
-if(nstr===str){
-  console.log(`${str} is pliandrome`);
-}else{
-  console.log(`${str} is not plaindrome`)
-}
-}
-plaindrome("civic");
+
+// function reverse(str){
+//   let nstr=str.split("").reverse().join("");
+// console.log(nstr);
 
 
 
-// Q9.Create a function to  check num prime or Not.
+// }
+// reverse("waseem");
 
-function prime(num){
-  for(let i=2;i<num;i++)
-  if(num%i==0){
-    return "num is  not prime";
-  }else{
-    return "num is prime";
-  }
+
+// // Q8.Create a function it checks string plaindrome.
+
+// let plaindrome=function(str){
+// let nstr=str.split("").reverse().join("");
+// if(nstr===str){
+//   console.log(`${str} is pliandrome`);
+// }else{
+//   console.log(`${str} is not plaindrome`)
+// }
+// }
+// plaindrome("civic");
+
+
+
+// // Q9.Create a function to  check num prime or Not.
+
+// function prime(num){
+//   for(let i=2;i<num;i++)
+//   if(num%i==0){
+//     return "num is  not prime";
+//   }else{
+//     return "num is prime";
+//   }
    
-  }
-console.log(prime(10));
+//   }
+// console.log(prime(10));
 
 
 
-// Q10.Create a function to check a greater num.
+// // Q10.Create a function to check a greater num.
 
-function largernumber(num1,num2){
-    if(num1>num2) return "num1 is greater ";
-    else          return "num2 is greater ";
+// function largernumber(num1,num2){
+//     if(num1>num2) return "num1 is greater ";
+//     else          return "num2 is greater ";
     
-}
-console.log(largernumber(144,23));
+// }
+// console.log(largernumber(144,23));
 
 
-// Q11.Create a function and print a table.
+// // Q11.Create a function and print a table.
 
-function table(num){
-  for(let i=1;i<=10;i++){
-   console.log(`${num} X ${i} = ${num*i}`);
-  }
-}
-table(5);
+// function table(num){
+//   for(let i=1;i<=10;i++){
+//    console.log(`${num} X ${i} = ${num*i}`);
+//   }
+// }
+// table(5);
 
 
-// // Q12.Create a function to claculate a perfact  Number.
+// // // Q12.Create a function to claculate a perfact  Number.
 
-function factor(num){
-    let sum=0;
-    for(let i=1;i<num;i++){
-        if(num%i===0){
-            sum+=i;
+// function factor(num){
+//     let sum=0;
+//     for(let i=1;i<num;i++){
+//         if(num%i===0){
+//             sum+=i;
         
-        }}
-            if(sum===num){
-                console.log("perpect num");
+//         }}
+//             if(sum===num){
+//                 console.log("perpect num");
 
-            }else{
-                console.log("not perfect num");
-            }
+//             }else{
+//                 console.log("not perfect num");
+//             }
         
-        }
-factor(11);
-factor(25);
-factor(6);
+//         }
+// factor(11);
+// factor(25);
+// factor(6);
+
+
+// Q13.Create a function to reverse a Number.
+
+function reverse(num=133){
+    let nnum=num.toString();
+    let str=nnum.split("").reverse().join("");
+    console.log( parseInt(str));
+
+}
+reverse(12345);
+reverse();
+
+
+
+// Q14.create a arrow function and count a word in sentence.
+
+let word=(sentence) => {
+   let count=0;
+   let news=sentence.split(" ");
+   let ns="";
+   for(let i=0;i<=news.length-1;i++){
+    ns+=news[i];
+    count++;
+   }
+return count;
+}
+console.log(word("waseem ads ahst ajsya ashyds"));
+console.log(word("waseem ads ahst ajs"));
