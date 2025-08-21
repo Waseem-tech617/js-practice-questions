@@ -199,3 +199,13 @@ average(25,32,43,65,765);
     console.log(a*b);
 })(1,3);
 
+
+// Q18.create a function of dobel the number.
+
+let dobel=function(num){
+    return num+num;
+
+}
+console.log(dobel(88));
+
+
