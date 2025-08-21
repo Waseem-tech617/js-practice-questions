@@ -153,7 +153,6 @@ reverse(12345);
 reverse();
 
 
-
 // Q14.create a arrow function and count a word in sentence.
 
 let word=(sentence) => {
@@ -168,3 +167,18 @@ return count;
 }
 console.log(word("waseem ads ahst ajsya ashyds"));
 console.log(word("waseem ads ahst ajs"));
+
+
+
+// Q15.find the average of numbers .
+
+function average(...val){
+let sum=0;
+for(let i=0;i<=val.length-1;i++){
+  sum=sum+val[i];
+}
+  let averag=sum/val.length;
+console.log(averag);
+}
+average(1,2,3,4,5,6,7);
+average(25,32,43,65,765);
