@@ -258,9 +258,8 @@ function multyplyby(num1){
 console.log(multyplyby(2)(5));
 
 
-
-
 // // Q23.Create a first class function to find double  number and square.
+
 function dobel(num){
     return num*2;
 }
@@ -272,4 +271,21 @@ function main(fn,value){
 }
 console.log(main(dobel,6));
 console.log(main(square,8));
+
+
+
+
+// // Q24.Create a HOF class function .
+
+function multiplyer(num1){
+    return function(num2){
+        return num1*num2;
+    }
+}
+let doble=multiplyer(2);
+let triple=multiplyer(3);
+let square=multiplyer(4);
+let cube=multiplyer(8);
+console.log(doble(10),triple(10),square(4),cube(3));
+
 
