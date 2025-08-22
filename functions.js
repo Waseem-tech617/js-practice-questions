@@ -256,3 +256,20 @@ function multyplyby(num1){
     }
 }
 console.log(multyplyby(2)(5));
+
+
+
+
+// // Q23.Create a first class function to find double  number and square.
+function dobel(num){
+    return num*2;
+}
+function square(num){
+    return num*num;
+}
+function main(fn,value){
+    return fn(value);
+}
+console.log(main(dobel,6));
+console.log(main(square,8));
+
