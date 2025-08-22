@@ -275,7 +275,7 @@ console.log(main(square,8));
 
 
 
-// // Q24.Create a HOF class function .
+// // Q24.Create a HOF  function .
 
 function multiplyer(num1){
     return function(num2){
@@ -288,4 +288,15 @@ let square=multiplyer(4);
 let cube=multiplyer(8);
 console.log(doble(10),triple(10),square(4),cube(3));
 
+
+// Q25.Create a HOF  function .
+
+function sqare(num) {return num*num;}
+ function doble(num) {return num*2;} 
+ function applyoperation(value,fn) {
+    return fn(value);
+ }
+console.log(applyoperation(3,sqare));
+console.log(applyoperation(3,sqare));
+console.log(applyoperation(3,doble));
 
