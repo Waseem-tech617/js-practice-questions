@@ -235,3 +235,14 @@ function greet(){
 }
 execute(massage);
 execute(greet);
+
+
+// Q21.Create a first class function .
+
+function seyhello(name){
+    return "Hello " +name;
+}
+function greet(fn){
+    return fn("Ali");
+}
+console.log(greet(seyhello));
