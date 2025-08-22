@@ -246,3 +246,13 @@ function greet(fn){
     return fn("Ali");
 }
 console.log(greet(seyhello));
+
+
+// Q22.Create a first class function who return a function.
+
+function multyplyby(num1){
+    return function(num2){
+        return num1*num2;
+    }
+}
+console.log(multyplyby(2)(5));
