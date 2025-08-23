@@ -300,3 +300,17 @@ console.log(applyoperation(3,sqare));
 console.log(applyoperation(3,sqare));
 console.log(applyoperation(3,doble));
 
+
+
+// // Q26.Create a HOF  function of calculatediscount .
+
+function calculatediscount(percent){
+    return function(price){
+        return   price-(price*percent/100);
+    }
+}
+let ten=calculatediscount(10);
+
+let towenty=calculatediscount(20);
+console.log(ten(1000),towenty(1000));
+
