@@ -330,3 +330,18 @@ function add(x,y) {return x+y;}
 let loggedadd=logingin(add);
 console.log(loggedadd(2,5));
 
+
+// //  Q28.Create a HOF  function .
+
+function repeet(fn){
+return function(num){
+    for(let i=1;i<=num;i++){
+      console.log(`Call ${i} :`);
+       return fn();
+    }
+}}
+function sayhello(){
+    console.log("waseem");
+}
+let sec=repeet(sayhello);
+sec(3);
