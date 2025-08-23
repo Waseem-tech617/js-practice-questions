@@ -316,7 +316,7 @@ console.log(ten(1000),towenty(1000));
 
 
 
-//  Q26.Create a HOF  function .
+//  Q27.Create a HOF  function .
 
 function logingin(fn){
     return function(a,b){
@@ -329,3 +329,4 @@ function logingin(fn){
 function add(x,y) {return x+y;}
 let loggedadd=logingin(add);
 console.log(loggedadd(2,5));
+
