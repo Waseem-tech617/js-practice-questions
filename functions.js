@@ -314,3 +314,18 @@ let ten=calculatediscount(10);
 let towenty=calculatediscount(20);
 console.log(ten(1000),towenty(1000));
 
+
+
+//  Q26.Create a HOF  function .
+
+function logingin(fn){
+    return function(a,b){
+        console.log(a,b);
+        let result=fn(a,b);
+        console.log(result);
+        return result;
+    }
+}
+function add(x,y) {return x+y;}
+let loggedadd=logingin(add);
+console.log(loggedadd(2,5));
