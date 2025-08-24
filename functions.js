@@ -345,3 +345,15 @@ function sayhello(){
 }
 let sec=repeet(sayhello);
 sec(3);
+
+
+// Q29.Create a function factory.
+function powerof(num1){
+    return function(num2){
+        return num2**num1;
+    }
+}
+let square=powerof(2);
+let cube =powerof(3);
+console.log(square(5));
+console.log(cube(2));
