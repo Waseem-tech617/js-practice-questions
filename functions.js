@@ -357,3 +357,21 @@ let square=powerof(2);
 let cube =powerof(3);
 console.log(square(5));
 console.log(cube(2));
+
+
+// Q30.Create a hof function .
+
+function withmasseg(fn){
+    return function(name){
+       console.log("function is about to run");
+       return fn(name);
+    }
+}
+function greet(name){
+    return "Hello "+name;
+}
+   let warap= withmasseg(greet);
+console.log(warap("waseem"));
+console.log(warap("agsg"));
+
+
