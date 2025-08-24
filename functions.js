@@ -375,3 +375,15 @@ console.log(warap("waseem"));
 console.log(warap("agsg"));
 
 
+// Q31.Create a hof function.
+
+function repeataction(fn,num){
+        for(let i=0;i<=num;i++){
+        fn();
+        }
+    }
+function mass(){
+    console.log("ali");}
+
+repeataction(mass,6);
+
