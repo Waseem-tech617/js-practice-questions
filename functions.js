@@ -364,7 +364,7 @@ console.log(cube(2));
 function withmasseg(fn){
     return function(name){
        console.log("function is about to run");
-       return fn(name);
+       return fn(name+"!");
     }
 }
 function greet(name){
@@ -387,3 +387,26 @@ function mass(){
 
 repeataction(mass,6);
 
+
+// Q2. WithLogging
+// Ek HOF withLogging banao jo ek function ko input me le.
+// Jab bhi wo function chale to:
+
+// Call ke arguments print karo
+// Function run karo
+// Result bhi print karo
+// Aur result return karo
+
+function withloggin(fn){
+   return function(x,y){
+    console.log("caling with arguments",x,y);
+    result=fn(x,y);
+    console.log("result is ",result);
+    return result;
+   }
+}
+function add(a,b){
+    return a+b;
+}
+let res=withloggin(add);
+console.log(res(2,3));
