@@ -442,3 +442,23 @@ console.log(x*y);
 }
 runcallback(add,2,3);
 runcallback(multiply,2,3);
+
+
+// Q35.Create a clouser function .
+
+function outer() {
+    let count = 0;  // outer ka variable
+
+    function inner() {
+        count++;  
+        return count;
+    }
+
+    return inner;
+}
+
+let counter = outer();
+
+console.log(counter()); // 1
+console.log(counter()); // 2
+console.log(counter()); // 3
