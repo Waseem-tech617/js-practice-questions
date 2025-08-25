@@ -427,3 +427,18 @@ let runer=runif(greet);
 let skip=runif(greet);
 runer(true);
 runer(false);
+
+
+// Q34.Creat a callback function .
+
+function runcallback(callback,x,y){
+   callback(x,y);
+}
+function add(x,y){
+console.log(x+y);
+}
+function multiply(x,y){
+console.log(x*y);
+}
+runcallback(add,2,3);
+runcallback(multiply,2,3);
