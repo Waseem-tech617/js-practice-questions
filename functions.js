@@ -388,7 +388,7 @@ function mass(){
 repeataction(mass,6);
 
 
-// Q2. WithLogging
+// Q32. WithLogging
 // Ek HOF withLogging banao jo ek function ko input me le.
 // Jab bhi wo function chale to:
 
@@ -410,3 +410,20 @@ function add(a,b){
 }
 let res=withloggin(add);
 console.log(res(2,3));
+
+
+// // Q33.Create a Hof function .
+function runif(fn){
+return function(condition){
+    if(condition===true){
+      console.log(fn());
+    }
+}
+}
+function greet(){
+    return "hello";
+}
+let runer=runif(greet);
+let skip=runif(greet);
+runer(true);
+runer(false);
