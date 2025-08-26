@@ -45,3 +45,13 @@ console.log(arr);
 let arr=["gcfgc","mango","apple","banana","fvhyv"];
 let narr=arr.slice(1,3);
 console.log(narr);
+
+
+
+// Q7.Use map method to square the given Array.
+
+let num=[1,2,3,4,5];
+let nnum=num.map(function(val){
+    return val*val;
+});
+console.log(nnum);
