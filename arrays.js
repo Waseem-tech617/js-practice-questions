@@ -33,3 +33,8 @@ arr.push("apple");
 console.log(arr);
 
 
+// Q5.Create an array and radd "banana" and"apple" in given array.
+
+let arr=["mango","apple","banana"];
+arr.splice(1,1,"waseem","eads");
+console.log(arr);
