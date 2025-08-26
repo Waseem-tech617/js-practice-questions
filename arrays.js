@@ -57,10 +57,19 @@ let nnum=num.map(function(val){
 console.log(nnum);
 
 
-// Q8.Use filter method to keep numbers greater then 10.
+//  Q8.Use filter method to keep numbers greater then 10.
 
-let num=[10,23,4,5,5657,21];
-let narr=num.filter(function(val){
-    return val>10;
+let num=[12,12,435,564];
+let narr=num.filter((val)=>{
+    return val>30;
 });
 console.log(narr);
+
+
+// Q9.use find method t find first greater number  then 12;
+
+let num=[12,12,435,564];
+let numa=num.find((val)=>{
+    return val>12;
+});
+console.log(numa);
