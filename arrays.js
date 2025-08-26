@@ -55,3 +55,12 @@ let nnum=num.map(function(val){
     return val*val;
 });
 console.log(nnum);
+
+
+// Q8.Use filter method to keep numbers greater then 10.
+
+let num=[10,23,4,5,5657,21];
+let narr=num.filter(function(val){
+    return val>10;
+});
+console.log(narr);
