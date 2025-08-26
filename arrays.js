@@ -73,3 +73,19 @@ let numa=num.find((val)=>{
     return val>12;
 });
 console.log(numa);
+
+
+// // Q10.use some method t find first less number  then 85;
+
+let num=[12,42,52];
+let numa=num.some((val)=>{
+   return val<85;
+});
+console.log(numa);
+
+
+// Q11.destructure the arry.
+
+let arr=["waseem","afagf","ahsh","ahsb"];
+let [a,,,b]=arr;
+console.log(arr);
