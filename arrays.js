@@ -12,3 +12,14 @@ console.log(newarr);
 let arr=["mango","apple","banana"];
 let narr=arr.slice(1,2);
 console.log(narr);
+
+
+// Q3.Add "mango" at the end of the array and "pineapple" beggining of an array.
+
+let arr=["mango","apple","banana"];
+arr.unshift("mangosq");
+arr.push("pineapple");
+
+
+console.log(arr,arr);
+
