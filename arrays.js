@@ -5,3 +5,10 @@ let newarr=arr.filter(function(val){
     if(val>4) return true;
 });
 console.log(newarr);
+
+
+// Q2.Create an array of  three fruits anfd print second one.
+
+let arr=["mango","apple","banana"];
+let narr=arr.slice(1,2);
+console.log(narr);
