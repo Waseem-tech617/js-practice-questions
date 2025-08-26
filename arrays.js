@@ -23,3 +23,13 @@ arr.push("pineapple");
 
 console.log(arr,arr);
 
+
+// Q4.Create an array and replace "banana" with "apple".
+
+let arr=["mango","apple","banana"];
+arr.pop();
+arr.push("apple");
+
+console.log(arr);
+
+
