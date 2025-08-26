@@ -38,3 +38,10 @@ console.log(arr);
 let arr=["mango","apple","banana"];
 arr.splice(1,1,"waseem","eads");
 console.log(arr);
+
+
+// Q6.Get an middel elements in an given array.
+
+let arr=["gcfgc","mango","apple","banana","fvhyv"];
+let narr=arr.slice(1,3);
+console.log(narr);
