@@ -97,3 +97,10 @@ let num=[45, 50, 60, 70];
 for(let nums of num){
     console.log(nums*2);
 }
+
+
+// Q13."banana" ko is array se remove karo.
+
+let fruits = ["apple", "banana", "mango", "orange"];
+fruits.splice(1,1).shift();
+console.log(fruits);
