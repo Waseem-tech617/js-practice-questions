@@ -89,3 +89,11 @@ console.log(numa);
 let arr=["waseem","afagf","ahsh","ahsb"];
 let [a,,,b]=arr;
 console.log(arr);
+
+
+// Q12.Create an array and multyply by 2.
+
+let num=[45, 50, 60, 70];
+for(let nums of num){
+    console.log(nums*2);
+}
