@@ -181,3 +181,17 @@ console.log(max);
 let words = ["JavaScript", "is", "awesome"];
 let a=words.reverse().join(" ");
 console.log(a);
+
+
+// Q22.   Isme se sirf odd numbers nikaal ke ek new array banao.
+
+let numbers = [1, 2, 3, 4, 5, 6];
+let newarray=numbers.filter((val)=>{
+    return val%3==0;
+});
+console.log(newarray);
+
+
+
+
+
