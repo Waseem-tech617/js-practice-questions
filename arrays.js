@@ -130,4 +130,13 @@ for(let num of numbers){
 let words = ["I", "love", "JavaScript"];
 let nword=words.join(" ");
 console.log(nword);
-   
+
+
+// Q17.is array ke sabhi elements ka sum nikaalo.
+
+let numbers = [2, 4, 6, 8, 10];
+let num=0;
+for(num of numbers){
+   num+=num;
+}
+console.log(num);
