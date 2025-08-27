@@ -104,3 +104,13 @@ for(let nums of num){
 let fruits = ["apple", "banana", "mango", "orange"];
 fruits.splice(1,1).shift();
 console.log(fruits);
+
+
+// Q14.Check karo "Ahmed" array me maujood hai ya nahi (true/false print karo).
+
+let names = ["Ali", "Sara", "Ahmed", "Hina"];
+let name=names.some((val)=>{
+    return val==="Ahmed";
+});
+console.log(name);
+   
