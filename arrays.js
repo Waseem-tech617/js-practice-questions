@@ -187,9 +187,21 @@ console.log(a);
 
 let numbers = [1, 2, 3, 4, 5, 6];
 let newarray=numbers.filter((val)=>{
-    return val%3==0;
+    return val%2!==0;
 });
 console.log(newarray);
+
+
+// Q23.Isme se sirf 15 ka index number print karo.
+
+let nums = [5, 10, 15, 20, 25];
+
+for(let i in nums){
+    if(nums[i]===15){
+       console.log(i) ;
+    }
+}
+
 
 
 
