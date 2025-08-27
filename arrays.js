@@ -140,3 +140,15 @@ for(num of numbers){
    num+=num;
 }
 console.log(num);
+
+
+// Q18.is array me "apple" kitni dafa aata hai, count karo.
+
+let fruits = ["apple", "mango", "orange", "apple", "banana"];
+let count=0;
+for(fru of fruits){
+    if(fru==="apple"){
+        count++;
+    }
+}
+console.log(count);
