@@ -123,4 +123,11 @@ for(let num of numbers){
         console.log(`${num} is even`);
     }
 }
+
+
+// Q16.inko ek sentence me join karke print karo.
+
+let words = ["I", "love", "JavaScript"];
+let nword=words.join(" ");
+console.log(nword);
    
