@@ -113,4 +113,14 @@ let name=names.some((val)=>{
     return val==="Ahmed";
 });
 console.log(name);
+
+
+// Q15.isme se sirf even numbers print karo.
+
+let numbers = [5, 10, 15, 20, 25];
+for(let num of numbers){
+    if(num%2==0){
+        console.log(`${num} is even`);
+    }
+}
    
