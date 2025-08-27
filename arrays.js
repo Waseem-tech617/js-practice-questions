@@ -163,3 +163,21 @@ for(num of mix){
     }
 }
 
+
+//Q20. is array ka sabse bara number find karo.
+
+let marks = [90, 45, 76, 88, 100];
+let max=marks[1];
+for(let num of marks){
+    if(num>=max){
+        max=num;
+    }
+}
+console.log(max);
+
+
+// Q21.is array ko reverse karke ek sentence print karo.
+
+let words = ["JavaScript", "is", "awesome"];
+let a=words.reverse().join(" ");
+console.log(a);
