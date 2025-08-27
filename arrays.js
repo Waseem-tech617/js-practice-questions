@@ -152,3 +152,14 @@ for(fru of fruits){
     }
 }
 console.log(count);
+
+
+// Q19.is array me sirf numbers print karo.
+
+let mix = [10, "Ali", true, 45, "Sara", false];
+for(num of mix){
+    if(typeof num==="number"){
+        console.log(num);
+    }
+}
+
