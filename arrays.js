@@ -203,6 +203,20 @@ for(let i in nums){
 }
 
 
+// Q24. Is array ka reverse manually karo (bina .reverse() method use kiye.
+
+let nums = [1, 2, 3, 4, 5];
+let nnums=[];
+for(let i of nums){
+    nnums.unshift(i);
+}
+console.log(nnums);
+
+
+
+
+
+
 
 
 
