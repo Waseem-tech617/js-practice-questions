@@ -256,3 +256,22 @@ for(let i of arr){
 
     }}
 console.log(secondsmallest);
+
+
+// Q28.User se ek number input lo (maan lo 15) aur check karo ki ye array me hai ya nahi. (Linear Search use karke).
+
+let arr = [4, 8, 15, 16, 23, 42];
+let user=prompt("enter a number");
+let found=false;
+for(let i of arr){
+    if(Number(user)===i){
+       found=true;
+       break;
+    }
+}
+if(found){
+    console.log("yes here");
+}else{
+    console.log("not value");
+}
+
