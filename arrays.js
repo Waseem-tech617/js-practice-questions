@@ -213,11 +213,28 @@ for(let i of nums){
 console.log(nnums);
 
 
+// Q25.Is array ka 2nd largest number find karo.
+                          
+let arr = [1, 2, 4, 3, 5];
+arr.sort((a,b)=>a-b);
+console.log(arr[arr.length-3]); // 4
 
 
+// Q26.Is array ma sa third large value nikalo.
 
-
-
-
-
-
+let arr = [2, 77,3, 4, 5,2,3,5,7,8,9,56,7];
+let largernumber=0;
+let secondlast=0;
+let third=0;
+for(let i of arr){
+    if(i>largernumber){
+       third=secondlast;
+        secondlast=largernumber;
+        largernumber=i;
+    }
+   else if(i>secondlast&&i<largernumber){
+    third=secondlast;
+    secondlast=i;
+   }
+}
+console.log(third);
