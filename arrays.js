@@ -222,19 +222,37 @@ console.log(arr[arr.length-3]); // 4
 
 // Q26.Is array ma sa third large value nikalo.
 
-let arr = [2, 77,3, 4, 5,2,3,5,7,8,9,56,7];
-let largernumber=0;
-let secondlast=0;
-let third=0;
+let arr = [2,3, 4, 5,2,3,5,7,8,9,56,7];
+let largernumber=-Infinity;
+let secondlast=-Infinity;
+let third=-Infinity;
 for(let i of arr){
     if(i>largernumber){
        third=secondlast;
         secondlast=largernumber;
         largernumber=i;
     }
-   else if(i>secondlast&&i<largernumber){
+   else if(i>secondlast &&i<largernumber){
     third=secondlast;
     secondlast=i;
    }
 }
 console.log(third);
+
+
+// // Q27.Isme se smallest number aur second smallest number find karo.
+
+let arr = [15, 7, 22, 11];
+let smallest=Infinity;
+let secondsmallest=Infinity;
+for(let i of arr){
+    if(i<smallest){
+        secondsmallest=smallest;
+        smallest=i;
+    }
+ else if (i < secondsmallest && i!==smallest ) {
+        
+        secondsmallest = i;
+
+    }}
+console.log(secondsmallest);
