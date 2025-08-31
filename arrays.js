@@ -300,3 +300,19 @@ for(let i of arr){
     narr.push(sum);
 }
 console.log(narr);
+
+
+// Q31.Array ka second smallest number find karo.
+let arr = [7, 2, 5, 3, 9, 1];
+let smallest=Infinity;
+let secondsmallest=Infinity;
+for(let i of arr){
+    if(i<smallest){
+        secondsmallest=smallest;
+        smallest=i;
+    }  else if(i>smallest && i!==smallest){
+        secondSmallest=i;
+    }
+}
+console.log(secondsmallest);
+
