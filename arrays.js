@@ -328,3 +328,19 @@ for(let i=0;i<=arr.length;i++){
 
 }
 console.log(index);
+
+
+// Q33.Odd numbers ka sum aur even numbers ka sum alag-alag print karo.
+let arr = [1, 2, 3, 4, 5, 6];
+let oddsum = 0;
+let evensum = 0;
+for (let i of arr) {
+    if (i % 2 == 0) {
+        evensum += i;   
+    } else {
+        oddsum += i;    
+    }
+}
+
+console.log("Odd Sum =", oddsum);
+console.log("Even Sum =", evensum);
