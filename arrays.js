@@ -275,3 +275,18 @@ if(found){
     console.log("not value");
 }
 
+
+// Q29.Duplicate numbers ko remove karke unique array banao.
+
+let arr = [3, 6, 2, 8, 4, 6, 2];
+let narr=[];
+for(let i of arr){
+  if(narr.includes(i)){
+     continue;
+  }else{
+    narr.push(i);
+  }
+
+}
+console.log(narr);
+
