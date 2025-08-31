@@ -316,3 +316,15 @@ for(let i of arr){
 }
 console.log(secondsmallest);
 
+
+// Q32.User se ek number input lo aur uska index batao (agar number na ho to -1).
+let arr = [4, 8, 15, 16, 23, 42];
+let user=prompt("enter a number");
+let index=-1;
+for(let i=0;i<=arr.length;i++){
+    if(Number(user)===arr[i]){
+     index=i;
+    }
+
+}
+console.log(index);
