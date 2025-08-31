@@ -341,6 +341,23 @@ for (let i of arr) {
         oddsum += i;    
     }
 }
-
 console.log("Odd Sum =", oddsum);
 console.log("Even Sum =", evensum);
+
+
+// Q34.Negative numbers ko alag array me aur positive numbers ko alag array me daalo.
+let arr = [2, 3, -1, -4, 6, -2];
+let positive=[];
+let negitive=[];
+for(let i of arr){
+    if(i<0){
+        negitive.push(i);
+    }else{
+        positive.push(i)
+    }
+}
+console.log(negitive);
+console.log(positive);
+
+
+
