@@ -290,3 +290,13 @@ for(let i of arr){
 }
 console.log(narr);
 
+
+// Q30.Har element ka cumulative sum nikal ke naya array banao.
+let arr = [10, 20, 30, 40, 50];
+let narr=[];
+let sum=0;
+for(let i of arr){
+    sum+=i;
+    narr.push(sum);
+}
+console.log(narr);
