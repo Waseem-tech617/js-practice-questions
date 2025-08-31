@@ -360,4 +360,16 @@ console.log(negitive);
 console.log(positive);
 
 
+//Q35.  Sirf woh numbers print karo jo sirf ek hi dafa aaye hain (unique frequency wale).
+let arr = [5, 3, 8, 5, 2, 8, 1, 3];
+let unique=[];
+for(let i of arr){
+   if(arr.indexOf(i)===arr.lastIndexOf(i)){
+    unique.push(i);
+   }
+  
+
+}
+console.log(unique);
+
 
