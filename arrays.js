@@ -394,3 +394,18 @@ let number=arr.filter((val)=>{
 console.log(number);
 
 
+// Q38. Ek aur array banao jisme har index par us index ke alawa baaki sab elements ka product ho .
+let arr = [1, 2, 3, 4, 5];
+let narr=[];
+for(let i=0;i<arr.length;i++){
+        let mul=1;
+       for(let j=0;j<arr.length;j++){
+        if(i===j){
+            continue;
+        }
+         mul=mul*arr[j];
+       }
+       
+       narr.push(mul);
+    }
+     console.log(narr);
