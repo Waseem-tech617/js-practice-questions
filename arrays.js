@@ -373,3 +373,17 @@ for(let i of arr){
 console.log(unique);
 
 
+//Q36.  Output aisa banao ke number + uski frequency dikhe.
+let arr = [1, 2, 2, 3, 4, 4, 4, 5];
+for(let i=0;i<=arr.length;i++){
+    Count=0;
+    for(let j=0;j<=arr.length;j++){
+        if(arr[i]===arr[j]){
+            Count++;
+        }
+    }
+    console.log(arr[i],"=",Count);
+    
+}
+
+
