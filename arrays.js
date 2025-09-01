@@ -386,4 +386,11 @@ for(let i=0;i<=arr.length;i++){
     
 }
 
+// Q37. Sirf woh numbers nikaalo jo 5 se divisible hain.
+let arr = [10, 15, 20, 25, 30];
+let number=arr.filter((val)=>{
+    return val%5==0;
+});
+console.log(number);
+
 
