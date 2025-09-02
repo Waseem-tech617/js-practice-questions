@@ -394,8 +394,8 @@ let number=arr.filter((val)=>{
 console.log(number);
 
 
-// Q38. Ek aur array banao jisme har index par us index ke alawa baaki sab elements ka product ho .
-let arr = [1, 2, 3, 4, 5];
+// // Q38. Ek aur array banao jisme har index par us index ke alawa baaki sab elements ka product ho .
+let arr = [1, 2, 0, 4, 2];
 let narr=[];
 for(let i=0;i<arr.length;i++){
         let mul=1;
@@ -409,3 +409,32 @@ for(let i=0;i<arr.length;i++){
        narr.push(mul);
     }
      console.log(narr);
+
+
+//  Q39. Ek aur array banao jisme har index par us index ke alawa baaki sab elements ka product ho 0 wala case.
+let arr = [1, 2, 2,1 , 2];
+let narr=[];
+let total=1;
+let zerocount=0;
+for(let i of arr){
+    if(i===0){
+        zerocount++;
+    }else{
+        total*=i;
+    }
+}
+for(let i of arr){
+    if(zerocount>1){
+        narr.push(0);
+    }else if(zerocount===1){
+        if(i===0){
+            narr.push(total);
+        }else{
+            narr.push(0);
+        }
+    }
+    else{
+        narr.push(total/i);
+    }
+}
+console.log(narr);
