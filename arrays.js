@@ -438,3 +438,13 @@ for(let i of arr){
     }
 }
 console.log(narr);
+
+
+// Q40.Check karo ye array palindrome hai ya nahi.
+let arr = [1, 2, 3, 2, 1];
+let narr=arr.reverse();
+if(narr===arr) {
+    console.log("yes");
+}else{
+    console.log("not");
+}
