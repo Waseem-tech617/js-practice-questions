@@ -465,5 +465,20 @@ if(narr===arr) {
     }
  console.log(arr);
 
+// Q42.Sabse zyada baar repeat hone wala number print karo.
 
+let arr = [1, 2, 3, 2, 1, 4, 5, 1];
+let maxinum=-Infinity;
+for(let i=0;i<arr.length;i++){
+    let count=0;
+    for(let j=0;j<arr.length;j++){
+        if(arr[i]===arr[j]){
+            count++;
+        }      
+    }
+   if(count>maxinum){
+    maxinum=arr[i];
+   }
+}
+console.log(maxinum);
 
