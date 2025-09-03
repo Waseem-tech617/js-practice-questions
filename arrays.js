@@ -493,6 +493,19 @@ for(let i=0;i<2;i++){
     rotated.push(arr[i]);
 }
 console.log(rotated);
-    
+
+
+// Q44. Sare possible subarrays print karo.
+let arr = [1, 2, 3, 4];
+for(let i=0;i<arr.length;i++){
+     for(let j=i+1;j<=arr.length;j++){
+      console.log(arr.slice(i,j));
+     }
+}
+
+
+
+
+
 
 
