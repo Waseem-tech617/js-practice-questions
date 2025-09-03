@@ -504,8 +504,11 @@ for(let i=0;i<arr.length;i++){
 }
 
 
-
-
-
+// Q45.Har number ko square karke naya array banao.
+let arr = [5, 10, 15, 20, 25];
+let narr=arr.map(val => {
+   return val*2;
+});
+console.log(narr);
 
 
