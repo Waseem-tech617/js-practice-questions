@@ -465,8 +465,8 @@ if(narr===arr) {
     }
  console.log(arr);
 
-// Q42.Sabse zyada baar repeat hone wala number print karo.
 
+// Q42.Sabse zyada baar repeat hone wala number print karo.
 let arr = [1, 2, 3, 2, 1, 4, 5, 1];
 let maxinum=-Infinity;
 for(let i=0;i<arr.length;i++){
@@ -481,4 +481,18 @@ for(let i=0;i<arr.length;i++){
    }
 }
 console.log(maxinum);
+
+
+// Q43.Array ke elements ko 2 index rotate karo.
+let arr = [10, 20, 30, 40, 50];
+let rotated=[];
+for(let i=2;i<arr.length;i++){
+    rotated.push(arr[i]);
+}
+for(let i=0;i<2;i++){
+    rotated.push(arr[i]);
+}
+console.log(rotated);
+    
+
 
