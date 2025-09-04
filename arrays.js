@@ -527,7 +527,7 @@ while(start<end){
 console.log(arr);
 
 
-// Sirf un numbers ka sum print karo jo 3 se divisible hain.
+//Q47. Sirf un numbers ka sum print karo jo 3 se divisible hain.
 let arr = [2, 4, 6, 8, 10, 12];
 let div=0;
 for(let i of arr){
@@ -537,7 +537,16 @@ for(let i of arr){
 }
 console.log(div);
 
-
+// Q48.is array ko 2 order rotate karo.
+let arr = [10, 20, 30, 40, 50];
+let narr=[];
+for(let i=2;i<=arr.length-1;i++){
+narr.push(arr[i]);
+}
+for(let i=0;i<2;i++){
+    narr.push(arr[i]);
+}
+console.log(narr);
 
 
 
