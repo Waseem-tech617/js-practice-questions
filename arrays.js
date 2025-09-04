@@ -525,3 +525,20 @@ while(start<end){
     end--;
 }
 console.log(arr);
+
+
+// Sirf un numbers ka sum print karo jo 3 se divisible hain.
+let arr = [2, 4, 6, 8, 10, 12];
+let div=0;
+for(let i of arr){
+    if(i%3==0){
+        div+=i;
+    }
+}
+console.log(div);
+
+
+
+
+
+
