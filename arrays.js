@@ -549,5 +549,15 @@ for(let i=0;i<2;i++){
 console.log(narr);
 
 
-
-
+//  Q49.Negative numbers ko ek array me aur positive numbers ko ek alag array me store karo.
+let arr = [2, 3, -1, -4, 6, -2];
+let Positive = [];
+let Negative = [];
+for(let i of arr){
+    if(i>0){
+        Positive.push(i);
+    }
+    else{
+        Negative.push(i);
+    }
+}
