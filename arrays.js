@@ -512,3 +512,16 @@ let narr=arr.map(val => {
 console.log(narr);
 
 
+// Q46.is array ko reverse karo bina reverse method ky.
+
+let arr = [1, 2, 3, 4, 5];
+let start=0;
+let end  =arr.length-1;
+while(start<end){
+    let tem=arr[start];
+    arr[start]=arr[end];
+    arr[end]=tem;
+    start++;
+    end--;
+}
+console.log(arr);
