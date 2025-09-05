@@ -565,9 +565,12 @@ for(let i of arr){
 
 // Q50.Array ke har possible pair print karo.
 let arr = [1, 2, 3, 4, 5];
-
 for (let i = 0; i < arr.length; i++) {
+      let sum=0;
     for (let j = i + 1; j < arr.length; j++) {
-        console.log([arr[i], arr[j]]);
+      console.log( [arr[i]+arr[j]]); 
     }
 }
+
+
+
