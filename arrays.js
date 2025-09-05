@@ -594,9 +594,18 @@ for (let i = 0; i < arr.length; i++) {
          console.log([`${sum} is odd`]);
       }
     }
+}   
+
+
+// Q53.Har index tak ka sum naya array me banao.
+let arr = [1, 2, 3, 4, 5];
+let narr=[];
+let sum=0;
+for(let i=0;i<=arr.length-1;i++){
+ sum+=arr[i];
+narr.push(sum);
 }
-
-
+console.log(narr);
 
 
 
