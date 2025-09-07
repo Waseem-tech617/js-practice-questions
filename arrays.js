@@ -608,5 +608,25 @@ narr.push(sum);
 console.log(narr);
 
 
-
-
+// Q5. Majority Element  Pata karo kaunsa element half se zyada dafa aata hai. (Answer: 2)
+let arr = [2,2,1,1,1,2,2];
+let maxinum=0;
+let majorty=0;
+ for(let i=0;i<=arr.length-1;i++){
+    let sum=0;
+    for(let j=0;j<=arr.length-1;j++){
+     if(arr[i]===arr[j]){
+        sum++;
+     }
+     if(sum>maxinum){
+        maxinum=sum;  
+       majorty=arr[i];
+     }
+    }
+   }
+if(maxinum>arr.length/2){
+  console.log(majorty);
+}
+else{
+   console.log("not majorty");
+}
