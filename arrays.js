@@ -630,3 +630,18 @@ if(maxinum>arr.length/2){
 else{
    console.log("not majorty");
 }
+
+
+// Q6. Two Sum Problem Do numbers ka sum target ke equal ho. Unke indexes print karo.
+// (Output: [0,1] → 2+7=9)
+let arr = [2, 7, 11, 15]
+let target = 9;
+for(let i=0;i<arr.length;i++){
+   for(let j=i+1;j<=arr.length;j++){
+      let sum=arr[i]+arr[j];
+       if(sum===target){
+         console.log([i,j])
+      }
+   }
+}
+
