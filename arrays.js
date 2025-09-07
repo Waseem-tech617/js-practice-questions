@@ -608,7 +608,7 @@ narr.push(sum);
 console.log(narr);
 
 
-// Q5. Majority Element  Pata karo kaunsa element half se zyada dafa aata hai. (Answer: 2)
+// Q54. Majority Element  Pata karo kaunsa element half se zyada dafa aata hai. (Answer: 2)
 let arr = [2,2,1,1,1,2,2];
 let maxinum=0;
 let majorty=0;
@@ -632,7 +632,7 @@ else{
 }
 
 
-// Q6. Two Sum Problem Do numbers ka sum target ke equal ho. Unke indexes print karo.
+// Q55. Two Sum Problem Do numbers ka sum target ke equal ho. Unke indexes print karo.
 // (Output: [0,1] → 2+7=9)
 let arr = [2, 7, 11, 15]
 let target = 9;
@@ -644,4 +644,25 @@ for(let i=0;i<arr.length;i++){
       }
    }
 }
+
+
+// Q56. Product of Array Except Self (Optimized)
+// 👉 Har index ke liye us index ke alawa baaki elements ka product print karo.
+// (Output: [24,12,8,6])
+let arr = [1,2,3,4];
+let narr=[];
+for(let i=0;i<arr.length;i++){
+   let product=1;
+   for(let j=0;j<arr.length;j++){
+     if(i===j){
+      continue;
+     }else{
+      product*=arr[j];
+     }
+   }
+   narr.push(product);
+}
+console.log(narr);
+
+
 
