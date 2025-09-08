@@ -690,3 +690,16 @@ for(let i of cart){
    arr.push(i);
 }
 console.log(arr);
+
+
+
+// Q59. Sirf un prices ko print karo jo 500 se kam hain (jaise product filter).
+
+
+let prices = [200, 450, 300, 600, 150];
+
+let number=prices.filter((val)=>{
+   return val<500;
+});
+console.log(number);
+
