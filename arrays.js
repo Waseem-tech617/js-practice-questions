@@ -665,9 +665,8 @@ for(let i=0;i<arr.length;i++){
 console.log(narr);
 
 
-// Q8. Find Missing Number 1 se 6 tak numbers hone chahiye. Missing number find karo.
+// Q57. Find Missing Number 1 se 6 tak numbers hone chahiye. Missing number find karo.
 // (Output: 3)
-
 let arr = [1,2,4,5,6];
 let narr=arr.sort((a,b)=>a-b);
 let missing=[];
@@ -677,6 +676,17 @@ for(let i=0;i<narr.length;i++){
    for(let j=curent+1;j<next;j++){
      missing.push(j);
    }
-
 }
 console.log(missing);
+
+
+// Q58.Cart me se duplicate fruits hatao taki har fruit sirf ek hi dafa ho.
+let cart = ["apple", "banana", "apple", "mango", "banana"];
+let arr=[];
+for(let i of cart){
+   if(arr.includes(i)){
+      continue;
+   }
+   arr.push(i);
+}
+console.log(arr);
