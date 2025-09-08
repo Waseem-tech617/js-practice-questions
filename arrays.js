@@ -706,7 +706,7 @@ console.log(number);
 let names = ["Ali", "Ahmed", "Sara", "Zara"];
 let user=prompt("eanter a name");
 for(let i=0;i<=names.length-1;i++){
-if(user.includes(names[i])){
+if(names.includes(user)){
    console.log("yes ");
 }
 }
@@ -734,4 +734,12 @@ todos.push("deploy website");
 console.log(todos);
 
 
-
+// Q63. Har price par 10% discount lagao aur new array banao.
+// Output: [180, 450, 900, 270]
+let prices = [200, 500, 1000, 300];
+let discount=[];
+for(let i of prices){
+   let a=i-(i/10);
+   discount.push(a);
+}
+console.log(discount);
