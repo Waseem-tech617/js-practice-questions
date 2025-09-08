@@ -665,4 +665,18 @@ for(let i=0;i<arr.length;i++){
 console.log(narr);
 
 
+// Q8. Find Missing Number 1 se 6 tak numbers hone chahiye. Missing number find karo.
+// (Output: 3)
 
+let arr = [1,2,4,5,6];
+let narr=arr.sort((a,b)=>a-b);
+let missing=[];
+for(let i=0;i<narr.length;i++){
+   let curent=narr[i];
+   let next=narr[i+1];
+   for(let j=curent+1;j<next;j++){
+     missing.push(j);
+   }
+
+}
+console.log(missing);
