@@ -728,4 +728,10 @@ console.log("passstudents = ",passstudents);
 console.log("failstudents = ",failstudents);
 
 
+// Q62.Ek array hai Array ke end me ek naya todo "Deploy Website" add karo aur phir updated list print karo.
+let todos = ["Learn JS", "Practice Arrays", "Make Project"];
+todos.push("deploy website");
+console.log(todos);
+
+
 
