@@ -710,3 +710,22 @@ if(user.includes(names[i])){
    console.log("yes ");
 }
 }
+
+
+//Q61. Ek array hai Pass students (>= 50) aur Fail students (< 50) ko do alag arrays me divide karo.
+
+let marks = [85, 92, 45, 77, 60];
+let passstudents=[];
+let failstudents=[];
+for(let i of marks){
+   if(i>=50){
+      passstudents.push(i);
+   }else if (i<50){
+      failstudents.push(i);
+}
+}
+console.log("passstudents = ",passstudents);
+console.log("failstudents = ",failstudents);
+
+
+
