@@ -692,10 +692,7 @@ for(let i of cart){
 console.log(arr);
 
 
-
 // Q59. Sirf un prices ko print karo jo 500 se kam hain (jaise product filter).
-
-
 let prices = [200, 450, 300, 600, 150];
 
 let number=prices.filter((val)=>{
@@ -703,3 +700,13 @@ let number=prices.filter((val)=>{
 });
 console.log(number);
 
+
+//Q60. Ek array hai Check karo user input (prompt se naam lo) is array me hai ya nahi.
+
+let names = ["Ali", "Ahmed", "Sara", "Zara"];
+let user=prompt("eanter a name");
+for(let i=0;i<=names.length-1;i++){
+if(user.includes(names[i])){
+   console.log("yes ");
+}
+}
