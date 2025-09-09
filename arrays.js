@@ -818,11 +818,12 @@ for(let i=0;i<=arr.length;i++){
 }
 
 
-// Q6. 2D array me maximum element find karo (aur uska row+col index bhi).
+//  Q68. 2D array me maximum element find karo (aur uska row+col index bhi).
 
 let arr=[ [1,2,3],
           [4,5,6],
-          [7,8,10]
+          [7,8,10],
+          [12,2,3,15]
 ];
 let maximum=0;
 let iindex=0;
@@ -835,7 +836,29 @@ for(let i=0;i<arr.length;i++){
              jindex=j;
         }
     }
-   
 }
 console.log("maximum element is = ",maximum);
  console.log("row index= ",iindex ,"column index= ",jindex);
+
+
+// Q69.is  array ko  90 dgree rotte karo.
+
+let arr=[
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+let narr=[];
+let nnarr=[];
+for(let i=arr.length-1;i>=0;i--){
+        narr.push(arr[i]);
+    }
+ for(let j=0;j<narr.length;j++){
+    let tem=[];
+     for(let i=0;i<narr.length;i++){
+        tem.push(arr[i][j]);
+     }
+     nnarr.push(tem);
+     }
+
+console.log(nnarr);
