@@ -774,3 +774,26 @@ let arr = [
     }
     console.log(sum);
 }
+
+
+// Q4. Diagonal elements print karo.
+// Input:
+// // 1 2 3
+// 4 5 6
+// 7 8 9
+// Output: [1,5,9] (left diagonal), [3,5,7] (right diagonal)
+let arr = 
+  [1,2,3],
+  [4,5,6],
+  [7,8,9]
+];
+let left=[];
+let right=[];
+ for(let i=0;i<arr.length;i++){
+       left.push(arr[i][i]);
+    }
+ for(let i=0;i<arr.length;i++){
+        right.push(arr[i][arr.length-1-i]);
+    }
+  console.log(left);
+  console.log(right);
