@@ -776,7 +776,7 @@ let arr = [
 }
 
 
-// Q4. Diagonal elements print karo.
+// Q66.diagonal print karo.
 // Input:
 // // 1 2 3
 // 4 5 6
@@ -797,3 +797,23 @@ let right=[];
     }
   console.log(left);
   console.log(right);
+
+
+// Q67. Transpose of a matrix banao.
+// Input:
+// 1 2 3
+// 4 5 6
+// Output:
+// 1 4
+// 2 5
+// 3 6
+let arr=[[1,2,3],
+        [4,5,6],]
+for(let i=0;i<=arr.length;i++){
+    row=[];
+    for(let j=0;j<arr.length;j++){
+    row.push(arr[j][i]);
+ }
+ console.log(row);  
+}
+
