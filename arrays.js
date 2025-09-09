@@ -817,3 +817,25 @@ for(let i=0;i<=arr.length;i++){
  console.log(row);  
 }
 
+
+// Q6. 2D array me maximum element find karo (aur uska row+col index bhi).
+
+let arr=[ [1,2,3],
+          [4,5,6],
+          [7,8,10]
+];
+let maximum=0;
+let iindex=0;
+let jindex=0
+for(let i=0;i<arr.length;i++){
+    for(let j=0;j<arr.length;j++){
+        if(arr[i][j]>maximum){
+            maximum=arr[i][j];
+             iindex=i;
+             jindex=j;
+        }
+    }
+   
+}
+console.log("maximum element is = ",maximum);
+ console.log("row index= ",iindex ,"column index= ",jindex);
