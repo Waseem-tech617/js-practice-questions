@@ -741,4 +741,5 @@ let user=Number(prompt("enter a number"));
 let discount=prices.map((val)=>{
    return val-(val/10);
 });
-console.log(discount)
+console.log(discount);
+
