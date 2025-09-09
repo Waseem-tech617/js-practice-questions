@@ -737,9 +737,8 @@ console.log(todos);
 // Q63. Har price par 10% discount lagao aur new array banao.
 // Output: [180, 450, 900, 270]
 let prices = [200, 500, 1000, 300];
-let discount=[];
-for(let i of prices){
-   let a=i-(i/10);
-   discount.push(a);
-}
-console.log(discount);
+let user=Number(prompt("enter a number"));
+let discount=prices.map((val)=>{
+   return val-(val/10);
+});
+console.log(discount)
