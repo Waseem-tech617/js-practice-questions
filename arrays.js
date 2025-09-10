@@ -865,10 +865,20 @@ console.log(nnarr);
 
 
 
-// Q70.Ek array ka sum nikalne ke liye reduce use karo.
-
+//Q70.Ek array ka sum nikalne ke liye reduce use karo.
 let arr = [10, 20, 30, 40];
 let sum=arr.reduce((val)=>{
     return val+val;
 });
 console.log(sum)
+
+
+
+
+// Q71.Array ke numbers ka maximum aur minimum reduce se find karo.
+
+let arr = [ 7, 2, 9, 1];
+let max=arr.reduce((acc,cur)=>{
+    return acc>cur?acc:cur;
+});
+console.log(min);
