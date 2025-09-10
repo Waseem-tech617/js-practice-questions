@@ -882,7 +882,6 @@ let max=arr.reduce((acc,cur)=>{
 console.log(min);
 
 
-
 // Q72.Array ke numbers ka  minimum reduce se find karo.
 
 let arr = [ 7, 2, 9, 1];
@@ -890,3 +889,17 @@ let min=arr.reduce((acc,cur)=>{
     return acc<cur?acc:cur;
 });
 console.log(min);
+   
+
+// Q73.Ek array me har element kitni dafa repeat hua hai uska frequency count banao.
+
+let arr = ["apple", "banana", "apple", "mango", "banana"];
+let frequency=arr.reduce((acc,cur)=>{
+if(acc[cur]){
+    acc[cur]++;
+}else{
+    acc[cur]=1;
+}
+return acc;
+},{});
+console.log(frequency);
