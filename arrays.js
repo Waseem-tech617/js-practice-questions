@@ -873,12 +873,20 @@ let sum=arr.reduce((val)=>{
 console.log(sum)
 
 
-
-
-// Q71.Array ke numbers ka maximum aur minimum reduce se find karo.
+// Q71.Array ke numbers ka maximum reduce se find karo.
 
 let arr = [ 7, 2, 9, 1];
 let max=arr.reduce((acc,cur)=>{
     return acc>cur?acc:cur;
+});
+console.log(min);
+
+
+
+// Q72.Array ke numbers ka  minimum reduce se find karo.
+
+let arr = [ 7, 2, 9, 1];
+let min=arr.reduce((acc,cur)=>{
+    return acc<cur?acc:cur;
 });
 console.log(min);
