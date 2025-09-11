@@ -903,3 +903,12 @@ if(acc[cur]){
 return acc;
 },{});
 console.log(frequency);
+
+
+// Q74.Array ke numbers ko ek string bana do.
+
+let arr = [1, 2, 3, 4];
+let string=arr.reduce((acc,cur)=>{
+    return acc.toString()+cur.toString();
+});
+console.log( string);
