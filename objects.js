@@ -15,3 +15,17 @@ const obj={
 }
 console.log(obj["brand"],obj.brand);
 
+
+// Q3.car object me:
+// Ek new property color add karo (value = "Black").
+// year ko update karke 2022 bana do.
+// Console me poora object print karo.
+
+const car={
+     brand: "Toyota",
+     model  : "Corolla",
+     year: 2020
+}
+car.color="black";
+car.year=2021;
+console.log(car);
