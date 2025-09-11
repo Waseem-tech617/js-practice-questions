@@ -42,7 +42,6 @@ console.log(car);
 
 
 //Q5. Ek user object banao jisme:
-// Console me user.address.city print karo
 // Address ke andar zip property add karo (value = 54000)
 const user={
       name: "Ali",
@@ -52,4 +51,5 @@ const user={
       country: "Pakistan"
 }
 }
-console.log(user.address.city);
+user.address.zip=54000;
+console.log(user);
