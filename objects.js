@@ -29,3 +29,13 @@ const car={
 car.color="black";
 car.year=2021;
 console.log(car);
+
+
+// Q4. Delete car object se model property delete karo.
+const car={
+    brand: "Toyota",
+    model  : "Corolla",
+    year: 2020
+}
+delete car.model;
+console.log(car);
