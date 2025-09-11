@@ -920,3 +920,12 @@ let string=arr.map((val)=>{
     return val.toString();
 });
 console.log(string);
+
+
+// Q76.Ek array me sab fruits ke naam uppercase karo.
+
+let arr=["apple","mango"];
+let uppercase=arr.map((val)=>{
+    return val.toUpperCase();
+})
+console.log(uppercase);
