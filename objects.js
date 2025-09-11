@@ -39,3 +39,17 @@ const car={
 }
 delete car.model;
 console.log(car);
+
+
+//Q5. Ek user object banao jisme:
+// Console me user.address.city print karo
+// Address ke andar zip property add karo (value = 54000)
+const user={
+      name: "Ali",
+      age : 25,
+      address: {
+      city: "Lahore",
+      country: "Pakistan"
+}
+}
+console.log(user.address.city);
