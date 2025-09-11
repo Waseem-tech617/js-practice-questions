@@ -912,3 +912,11 @@ let string=arr.reduce((acc,cur)=>{
     return acc.toString()+cur.toString();
 });
 console.log( string);
+
+
+//Q75. Ek array me sab numbers ko string me convert karo.
+let arr=[1, 2, 3] ;
+let string=arr.map((val)=>{
+    return val.toString();
+});
+console.log(string);
