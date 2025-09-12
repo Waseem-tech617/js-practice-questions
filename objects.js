@@ -53,3 +53,19 @@ const user={
 }
 user.address.zip=54000;
 console.log(user);
+
+
+// Q6. Object with Array
+// Ek student object banao jisme:
+// name: "Sara"
+// subjects: ["Math", "English", "Science"]
+// Sara ka first subject print karo
+// Subjects me "History" add karo
+
+let student={
+    name: "Sara",
+    subjects: ["Math", "English", "Science"]
+}
+console.log(student.subjects[0]);
+student.subjects.push("History");
+
