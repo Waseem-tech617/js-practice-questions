@@ -69,3 +69,28 @@ let student={
 console.log(student.subjects[0]);
 student.subjects.push("History");
 
+
+// Q3. Array of Objects inside Object
+// Ek company object banao jisme:
+// name: "TechCorp"
+// employees: [
+//    { id: 1, name: "Asad", role: "Developer" },
+//    { id: 2, name: "Zara", role: "Designer" }
+// ]
+// Pehle employee ka naam print karo
+// Dusre employee ka role update karke "UI/UX Designer" kar do
+// Ek naya employee {id:3, name:"Bilal", role:"Manager"} add karo
+
+
+let company={
+name: "TechCorp",
+employees: [
+   { id: 1, name: "Asad", role: "Developer" },
+   { id: 2, name: "Zara", role: "Designer" }
+]
+}
+company.employees.push({id:3, name:"bilal", role:"manager"});
+company.employees[0].role="UI/UX Designer";
+console.log(company.employees[0].name);
+console.log(company.employees[0].role);
+console.log(company.employees);
