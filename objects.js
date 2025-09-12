@@ -121,3 +121,15 @@ product.variants[0].stock=10;
 product.variants.push({color:"Black", stock:7});
 console.log(product.variants[0].stock);
 console.log(product.variants);
+
+
+// Q9. Greeting Method
+// Ek user object banao:
+let user={
+  name: "Ali",
+  greet() {
+    return "Hello " + this.name;
+  }
+}
+console.log(user.greet())
+
