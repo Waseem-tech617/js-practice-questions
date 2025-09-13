@@ -134,7 +134,7 @@ let user={
 console.log(user.greet())
 
 
-// Q2. Calculator Object
+// Q10. Calculator Object
 // Ek calculator object banao jisme methods ho:
 // add(a, b) → do numbers ka sum return kare
 // sub(a, b) → subtraction return kare
@@ -149,3 +149,16 @@ let calculator={
 }
 console.log(calculator.add(2,4));
 console.log(calculator.Sub(7,4));
+
+
+
+// Q11.Ek product object banao:
+// Agar discountPercent = 10 ho to price → 1800 return ho.
+let product={
+  name: "Shoes",
+  price: 2000,
+  getDiscountedPrice(discountPercent) {
+    return this.price-(this.price/100*discountPercent);
+  }
+}
+console.log(product.getDiscountedPrice(20));
