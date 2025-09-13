@@ -151,7 +151,6 @@ console.log(calculator.add(2,4));
 console.log(calculator.Sub(7,4));
 
 
-
 // Q11.Ek product object banao:
 // Agar discountPercent = 10 ho to price → 1800 return ho.
 let product={
@@ -162,3 +161,23 @@ let product={
   }
 }
 console.log(product.getDiscountedPrice(20));
+   
+
+// Q12. Ek student object banao or on masa marks ka sum nikalo:
+
+let student={
+Name:"sara",
+Marks:{
+Math:50,
+scince:23,
+physcis:56
+},
+getmarks(){
+let sum=0;
+for(let val in this.Marks){
+     sum+=this.Marks[val];
+}
+return sum;
+}
+}
+console.log(student.getmarks());
