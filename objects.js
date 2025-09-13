@@ -133,3 +133,19 @@ let user={
 }
 console.log(user.greet())
 
+
+// Q2. Calculator Object
+// Ek calculator object banao jisme methods ho:
+// add(a, b) → do numbers ka sum return kare
+// sub(a, b) → subtraction return kare
+
+let calculator={
+    add(a,b){
+        return a+b;
+    },
+    Sub(a,b){
+        return a-b;
+    }
+}
+console.log(calculator.add(2,4));
+console.log(calculator.Sub(7,4));
