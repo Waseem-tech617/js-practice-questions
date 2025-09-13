@@ -163,7 +163,7 @@ let product={
 console.log(product.getDiscountedPrice(20));
    
 
-// Q12. Ek student object banao or on masa marks ka sum nikalo:
+// // Q12. Ek student object banao or on masa marks ka sum nikalo:
 
 let student={
 Name:"sara",
