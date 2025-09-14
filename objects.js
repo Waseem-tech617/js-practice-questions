@@ -231,9 +231,16 @@ let car={...car1,...car2};
 console.log(car);
 
 
-// Ek student = { name: "Sara", age: 20, grade: "A" } banao → destructuring + rest operator use karke name alag nikalo aur baaki ek naya object me rakho.
+//Q18. Ek student = { name: "Sara", age: 20, grade: "A" } banao → destructuring + rest operator use karke name alag nikalo aur baaki ek naya object me rakho.
 
 let student = { name: "Sara", age: 20, grade: "A" };
 let{name,...rest}=student;
 console.log(name);
 console.log(rest);
+
+
+//Q19. Ek settings = { theme: "dark", font: "Arial" } banao → spread use karke isme theme: "light" update karo without mutating original object.
+
+let settings = { theme: "dark", font: "Arial" };
+let update={...settings,theme:"light"};
+console.log(update);
