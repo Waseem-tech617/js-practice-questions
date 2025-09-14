@@ -229,3 +229,11 @@ let car1 = { brand: "Toyota", year: 2020 } ;
 let car2 = { model: "Corolla", price: 3000 };
 let car={...car1,...car2};
 console.log(car);
+
+
+// Ek student = { name: "Sara", age: 20, grade: "A" } banao → destructuring + rest operator use karke name alag nikalo aur baaki ek naya object me rakho.
+
+let student = { name: "Sara", age: 20, grade: "A" };
+let{name,...rest}=student;
+console.log(name);
+console.log(rest);
