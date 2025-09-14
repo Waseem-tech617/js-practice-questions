@@ -195,7 +195,7 @@ for(let i in user){
     console.log(i,user[i]);
 }
 
-// Q8. Product object ki property count nikalo
+// Q14. Product object ki property count nikalo
 
 let product = {
   name: "Shoes",
@@ -205,3 +205,10 @@ let product = {
 };
 let count=Object.keys(product).length;
 console.log("property count: ",count);
+
+
+//Q15. Ek book object banao {title, author, year} → destructure karke title aur author print karo.
+
+ let user={title:"job", author:"waseem",year:2017};
+let {title,author}=user;
+console.log(title,author);
