@@ -212,3 +212,13 @@ console.log("property count: ",count);
  let user={title:"job", author:"waseem",year:2017};
 let {title,author}=user;
 console.log(title,author);
+
+
+//Q16. Ek laptop object banao {brand, model} → destructure karke ek price default value ke saath print karo.
+
+let latop={
+  brand:"Hp",
+  model:"core 5"
+}
+let{brand,model,price=20000}=latop;
+console.log(brand,model,price);
