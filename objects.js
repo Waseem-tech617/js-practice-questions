@@ -163,7 +163,7 @@ let product={
 console.log(product.getDiscountedPrice(20));
    
 
-// // Q12. Ek student object banao or on masa marks ka sum nikalo:
+//  Q12. Ek student object banao or on masa marks ka sum nikalo:
 
 let student={
 Name:"sara",
@@ -181,3 +181,16 @@ return sum;
 }
 }
 console.log(student.getmarks());
+
+
+
+// Q13. User object ki sari keys aur values print karo.
+let user = {
+  id: 101,
+  name: "Ali",
+  age: 25,
+  city: "Lahore"
+};
+for(let i in user){
+    console.log(i,user[i]);
+}
