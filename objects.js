@@ -194,3 +194,14 @@ let user = {
 for(let i in user){
     console.log(i,user[i]);
 }
+
+// Q8. Product object ki property count nikalo
+
+let product = {
+  name: "Shoes",
+  price: 2000,
+  brand: "Nike",
+  inStock: true
+};
+let count=Object.keys(product).length;
+console.log("property count: ",count);
