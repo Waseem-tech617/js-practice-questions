@@ -222,3 +222,10 @@ let latop={
 }
 let{brand,model,price=20000}=latop;
 console.log(brand,model,price);
+
+
+//Q17. Ek car1 = { brand: "Toyota", year: 2020 } aur car2 = { model: "Corolla", price: 3000 } banao → dono ko merge karke car object print karo.
+let car1 = { brand: "Toyota", year: 2020 } ;
+let car2 = { model: "Corolla", price: 3000 };
+let car={...car1,...car2};
+console.log(car);
