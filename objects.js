@@ -285,13 +285,14 @@ let cheap=products.filter((p)=>{
 console.log(cheap);
 
 
-// Q22. Ek cart array banao → total bill nikalne ke liye reduce use karo.
+// // Q22. Ek cart array banao → total bill nikalne ke liye reduce use karo.
 
 let cart = [
   { item: "Shoes", price: 2000, qty: 2 },
   { item: "Shirt", price: 1000, qty: 3 }
 ];
 let totalbil=cart.reduce((acc,cur)=>{
-    return acc.price+cur.price;
-});
+    return acc+(cur.price*cur.qty);
+},0);
 console.log(totalbil);
+
