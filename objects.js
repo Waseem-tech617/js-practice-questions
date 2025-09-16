@@ -306,4 +306,17 @@ let users2 = [
 let id=users2.find((p)=>{
     return p.id===2;
 });
-console.log(id)
+console.log(id);
+
+
+// Q24. Ek products array banao → unko price ke hisaab se ascending order me sort karo.
+
+let products2 = [
+  { name: "Shoes", price: 2000 },
+  { name: "Shirt", price: 800 },
+  { name: "Watch", price: 600 }
+];
+let newproducts2=products2.sort((a,b)=>{
+    return a.price-b.price;
+});
+console.log(newproducts2);
