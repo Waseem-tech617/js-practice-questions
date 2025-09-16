@@ -296,3 +296,14 @@ let totalbil=cart.reduce((acc,cur)=>{
 },0);
 console.log(totalbil);
 
+
+// Q23. Ek array banao → ek specific id wala object find karo (find use karke).
+let users2 = [
+  { id: 1, name: "Ali" },
+  { id: 2, name: "Sara" },
+  { id: 3, name: "Ahmed" }
+];
+let id=users2.find((p)=>{
+    return p.id===2;
+});
+console.log(id)
