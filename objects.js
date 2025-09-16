@@ -270,3 +270,18 @@ let names=users.map((val)=>{
     return val.name;
 });
 console.log(names);
+
+
+// Q21. Ek products array banao → sirf wo products filter karo jinka price < 1000 ho.
+
+let products = [
+  { name: "Shoes", price: 1200 },
+  { name: "Shirt", price: 800 },
+  { name: "Watch", price: 600 }
+];
+let cheap=products.filter((p)=>{
+    return p.price<1000;
+});
+console.log(cheap);
+
+
