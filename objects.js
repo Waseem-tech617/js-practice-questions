@@ -257,3 +257,16 @@ let student={name:"Sara", marks:{math:90}};
 let newstu=(JSON.parse(JSON.stringify(student)));
 newstu.marks.marks=99;
 console.log(student,newstu);
+
+
+// Q20. Ek users array banao → sirf names print karo (map use karke).
+
+let users = [
+  { id: 1, name: "Ali" },
+  { id: 2, name: "Sara" },
+  { id: 3, name: "Ahmed" }
+];
+let names=users.map((val)=>{
+    return val.name;
+});
+console.log(names);
