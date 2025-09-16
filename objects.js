@@ -244,3 +244,13 @@ console.log(rest);
 let settings = { theme: "dark", font: "Arial" };
 let update={...settings,theme:"light"};
 console.log(update);
+
+
+
+// Q20.Ek object {name:"Sara", marks:{math:90}} banao → shallow copy karo (spread operator se) → nested math marks change karke check karo.
+
+ let student={name:"Sara", marks:{math:90}};
+ let newstu={...student};
+ newstu.marks.math=44;
+console.log(student,newstu);
+
