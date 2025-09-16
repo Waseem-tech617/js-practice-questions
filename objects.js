@@ -240,17 +240,20 @@ console.log(rest);
 
 
 //Q19. Ek settings = { theme: "dark", font: "Arial" } banao → spread use karke isme theme: "light" update karo without mutating original object.
-
 let settings = { theme: "dark", font: "Arial" };
 let update={...settings,theme:"light"};
 console.log(update);
 
 
-
-// Q20.Ek object {name:"Sara", marks:{math:90}} banao → shallow copy karo (spread operator se) → nested math marks change karke check karo.
-
+// // Q20.Ek object {name:"Sara", marks:{math:90}} banao → shallow copy karo (spread operator se) → nested math marks change karke check karo.
  let student={name:"Sara", marks:{math:90}};
  let newstu={...student};
- newstu.marks.math=44;
+ newstu.marks.marks=99;
 console.log(student,newstu);
 
+
+// // Q20.Usi object ka deep copy karo (JSON.parse(JSON.stringify())) → nested marks change karke dekho kya farq aata hai.
+let student={name:"Sara", marks:{math:90}};
+let newstu=(JSON.parse(JSON.stringify(student)));
+newstu.marks.marks=99;
+console.log(student,newstu);
