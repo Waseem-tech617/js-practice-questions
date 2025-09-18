@@ -119,4 +119,32 @@ let sortitem=Shoppingcart.sort((a,b)=>{
     return a.price-b.price;
 });
 console.log(sortitem);
+  
 
+//  ✅ Project 8:Student Records Dashboard.
+// Add student record (name, marks, grade)
+// Filter pass/fail
+// Sort by marks
+// Calculate average marks (reduce)
+// Show top student
+let students=[
+    {Namae:"ali",marks:90,grade:"A"},
+     {Namae:"waseem",marks:40,grade:"f"},
+      {Namae:"saleem",marks:70,grade:"B+"},
+];
+let result=students.filter(s=>s.marks>50);
+console.log(result);
+let sortstudens=students.sort((a,b)=>{
+    return a.marks-b.marks;
+});
+console.log(sortstudens);
+let toltalsum=students.reduce((rec,cur)=>{
+    return rec+cur.marks;
+},0);
+let averagemarks=toltalsum/students.length;
+console.log(averagemarks);
+
+let topstudent=sortstudens.reduce((max,cur)=>{
+  return (cur.marks>max.marks?cur:marks);
+});
+console.log(topstudent);
