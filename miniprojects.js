@@ -85,5 +85,38 @@ let delelecontact=contacts.filter(d=>d.Name!=="waseem");
 console.log("delelecontact",delelecontact);
 
  
- 
+//  ✅ Project 7:Create a Shopping Cart .
+// Add item (array of objects)
+// Update qty (map ya find)
+// Calculate total (reduce)
+// Remove item (filter)
+// Sort by price (sort)
+// Save cart in localStorage
+
+let Shoppingcart=[
+    {Name:"shoes",price:2000,quentity:2},
+    {Name:"school bag",price:2500,quentity:1},
+    {Name:"shirt",price:2000,quentity:3}
+];
+let update=Shoppingcart.map((q)=>{
+  if(q.Name==="shoes"){
+return {...q,quentity:1};
+  }
+  return q;
+});
+console.log(update);
+let total=Shoppingcart.reduce((val1,val2)=>{
+    return val1+(val2.quentity*val2.price);
+},0);
+console.log(total);
+let deleteitem=Shoppingcart.filter((item)=>{
+if(item.Name!=="school bag"){
+    return item;
+}
+});
+console.log(deleteitem);
+let sortitem=Shoppingcart.sort((a,b)=>{
+    return a.price-b.price;
+});
+console.log(sortitem);
 
