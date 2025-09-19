@@ -148,3 +148,35 @@ let topstudent=sortstudens.reduce((max,cur)=>{
   return (cur.marks>max.marks?cur:marks);
 });
 console.log(topstudent);
+
+
+//  ✅ Project 9:Ek function banana hai buyProduct(id, qty).
+// id → konsa product kharidna hai
+// qty → kitni quantity kharidni hai
+// Is function me karna yeh hoga:
+// Us product ko array me se dhundhna (find se).
+// Check karna ke stock me utni quantity available hai ya nahi.
+// Agar available hai → stock me se qty minus kar do.
+// Agar stock 0 ya negative ho jaye → "Out of stock" print karo.
+
+let products = [
+  { id: 1, name: "Shoes", price: 2000, stock: 5 },
+  { id: 2, name: "Shirt", price: 1000, stock: 2 },
+  { id: 3, name: "Watch", price: 3000, stock: 1 }
+];
+function buyProduct(id,qut){
+    let searchproduct=products.find((p)=> p.id==id);
+    if(!searchproduct){
+        console.log("product not found");
+       return;
+    }
+    if(searchproduct.stock>=qut){
+        searchproduct.stock-=qut;
+         console.log(`You bought ${qut} ${searchproduct.name}`);
+        console.log(`Remaining stock: ${searchproduct.stock}`);
+    } else {
+        console.log("Out of stock");
+    }
+    }
+
+buyProduct(2,1);
