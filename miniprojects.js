@@ -178,5 +178,43 @@ function buyProduct(id,qut){
         console.log("Out of stock");
     }
     }
-
 buyProduct(2,1);
+
+
+// ✅ Project 10: Library System.
+// Ek library object banao jisme books array ho {title, author, available}.
+// 👉 Functions likho:
+// addBook(title, author)
+// borrowBook(title) → available = false
+// returnBook(title) → available = true
+
+let library=[
+    {title:"physcis",author:"waseem",aviable:true},
+    {title:"chemistey",author:"saleem",aviable:true},
+];
+function addbook(tittle,author){
+    library.push({tittle,author});
+    console.log(library);
+}
+function borrowbook(book){
+    let searchbook=library.find((b)=>b.title==book);
+    if(searchbook.aviable==false){
+        console.log("book is already borowed");
+    }
+    if(searchbook){
+    return searchbook.aviable=false;
+    } 
+}
+function returnbook(book){
+     let searchbook=library.find((b)=>b.title==book);
+    if(searchbook.aviable==true){
+        console.log("book is not borowed");
+    }
+    if(searchbook.aviable==false){
+        return searchbook.aviable=true;
+    }
+    
+}
+borrowbook("physcis");
+returnbook("chemistey");
+console.log(library);
