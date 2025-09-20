@@ -218,3 +218,16 @@ function returnbook(book){
 borrowbook("physcis");
 returnbook("chemistey");
 console.log(library);
+
+//  ✅ Project 11: Employee Salary Report
+// Ek employees array banao {id, name, salary}.
+// 👉 Reduce use karke total salary aur average salary nikal ke print karo.
+
+let employees=[
+{id:1,Name:"waseem",salary:50000},
+{id:2,Name:"amin",salary:55000}
+];
+let totalsalary=employees.reduce((total,sal)=> total+sal.salary,0);
+console.log(totalsalary);
+let salaryaverage=totalsalary/employees.length;
+console.log(salaryaverage);
