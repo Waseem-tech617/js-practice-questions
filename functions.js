@@ -484,7 +484,7 @@ return Math.max(...arr);
 console.log(maximumnumber([9,4,3,2,6]));
 
 
-// Q38.Ek function getNames(arr) banao jo ek objects array lega (har object me {id, name} ho) aur sirf names ka array return kare.
+// // Q38.Ek function getNames(arr) banao jo ek objects array lega (har object me {id, name} ho) aur sirf names ka array return kare.
 function obj(arr){
    let getNames=arr.map((n)=> n.name);
    return getNames;
