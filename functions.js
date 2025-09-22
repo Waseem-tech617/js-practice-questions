@@ -477,5 +477,10 @@ function getEvenNumbers(arr){
 console.log(getEvenNumbers([1,2,3,4,5,6,7,8]));
 
 
+// Q37.Ek function getMax(arr) banao jo ek numbers array lega aur uska maximum number return kare.
+function maximumnumber(arr){
+return Math.max(...arr);
+}
+console.log(maximumnumber([9,4,3,2,6]));
 
 
