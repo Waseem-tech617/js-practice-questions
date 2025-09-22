@@ -490,3 +490,14 @@ function obj(arr){
    return getNames;
 }
 console.log(obj([{id:1,name:"waseem"},{id:2,name:"saleem"}]));
+
+
+
+// Q39.Ek function applyOperation(a, b, operation) banao jo 2 numbers aur ek callback function lega (jaise add, subtract, multiply). Operation ke hisaab se result return kare.
+function applyOperation(a,b,operation){
+ return operation(a,b);
+}
+function add(a,b){
+   return a+b;
+};
+console.log(applyOperation(2,6,add));
