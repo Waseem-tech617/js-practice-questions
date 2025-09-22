@@ -501,3 +501,9 @@ function add(a,b){
    return a+b;
 };
 console.log(applyOperation(2,6,add));
+
+//Q40. Ek function wordLengths(words) banao jo ek array of strings lega aur har word ka length ka array return kare.
+ function countwordlength(arr){
+return arr.map(word=>word.length);
+ }
+console.log(countwordlength( ["apple","banana","kiwi"] ));
