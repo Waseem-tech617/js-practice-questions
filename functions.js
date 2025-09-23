@@ -521,3 +521,34 @@ let isabove40=students.every((stu)=>{
     return stu.marks>40;
 });
 console.log(isabove40);
+
+
+// Q42.Ek products array hai {name, stock}. some() use karke check karo ke koi product out of stock (stock = 0) to nahi hai.
+let products = [
+    {
+        id: 1,
+        name: "Shoes",
+        price: 2000,
+        stock: 10,
+        category: "Footwear",
+        available: true
+    },
+    {
+        id: 2,
+        name: "Shirt",
+        price: 1200,
+        stock: 15,
+        category: "Clothing",
+        available: true
+    },
+    {
+        id: 3,
+        name: "Watch",
+        price: 5000,
+        stock: 0,
+        category: "Accessories",
+        available: true
+    }
+];
+let checkstock=products.some((stk)=>stk.stock===0);
+console.log(checkstock);
