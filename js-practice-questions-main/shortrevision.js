@@ -28,4 +28,36 @@ if(num>0){
 
 let num=Number(prompt("enter a num"));
 let result=num>0?`${num} is positive`:num<0?`${num} is negitive`:num===0?`${num} is zero`:NaN;
-console.log(result):
+console.log(result);
+
+// 🔹 Question 3: Day Name
+
+// Ek number (1–7) lo aur switch se print karo:
+
+// 1 → Monday
+
+// 2 → Tuesday
+
+// 3 → Wednesday
+
+// 4 → Thursday
+
+// 5 → Friday
+
+// 6 → Saturday
+
+// 7 → Sunday
+
+// Default → “Invalid day”
+
+let day="saturday";
+switch(day){
+    case "Monday":
+        console.log("Monday"); 
+        break;
+        case "saturday":
+            console.log("saturday");
+            break;
+            default:
+                console.log("not a day");
+}
