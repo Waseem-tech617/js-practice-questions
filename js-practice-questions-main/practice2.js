@@ -26,6 +26,6 @@ if(num>0){
 
 // “Zero” if 
 
-let num=Number(prompt("enter a num"));
-let result=num>0?`${num} is positive`:num<0?`${num} is negitive`:num===0?`${num} is zero`:NaN;
-console.log(result):
+// let num=Number(prompt("enter a num"));
+// let result=num>0?`${num} is positive`:num<0?`${num} is negitive`:num===0?`${num} is zero`:NaN;
+// console.log(result):
