@@ -50,14 +50,43 @@ console.log(result);
 
 // Default → “Invalid day”
 
-let day="saturday";
-switch(day){
-    case "Monday":
-        console.log("Monday"); 
+// let day="saturday";
+// switch(day){
+//     case "Monday":
+//         console.log("Monday"); 
+//         break;
+//         case "saturday":
+//             console.log("saturday");
+//             break;
+//             default:
+//                 console.log("not a day");
+// }
+
+
+
+// 🔹 Question 4: Traffic Light
+
+// Ek color input lo:
+
+// "red" → Stop
+
+// "yellow" → Ready
+
+// "green" → Go
+
+// Default → Invalid color
+
+let color=prompt("enter a color");
+switch(color){
+    case "red":
+        console.log("stop");
         break;
-        case "saturday":
-            console.log("saturday");
+        case "yellow":
+            console.log("ready");
             break;
-            default:
-                console.log("not a day");
+            case "green":
+                console.log("go");
+                break;
+                default:
+                    console.log("invalid color");
 }
