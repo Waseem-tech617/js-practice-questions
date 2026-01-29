@@ -6,18 +6,31 @@
 html,body{
     height: 100%;
     width: 100%;
+    
 }
-                                 /* Practice navbar */
-#navbar{
-height: 50px;
-background-color: black;
-}
-a{
-    margin-right: 150px;
-    text-decoration: none;
-    color: aliceblue;
-}
-#logo{
-    font-size: 20px;
-    color:#f08804;
-}
+ .box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid;
+    margin: 3px;
+    
+ }
+ .box1{
+    background-color: red;
+    position: sticky;
+    top: 0px;
+    left: 100px;
+ }
+ .box2{
+    background-color: aqua;
+ }
+ .box3{
+    background-color: blueviolet;
+ }
+ .box4{
+    background-color: brown;
+    height: 1000px;
+    
+    
+    
+ }
